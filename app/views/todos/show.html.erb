@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tags:</strong>
+  <%= @todo.tags %>
+</p>
+
+<p>
+  <strong>Due on:</strong>
+  <%= @todo.due_on %>
+</p>
+
+<p>
+  <strong>Priority:</strong>
+  <%= @todo.priority %>
+</p>
+
+<p>
+  <strong>Completed on:</strong>
+  <%= @todo.completed_on %>
+</p>
+
+<p>
+  <strong>Task:</strong>
+  <%= @todo.task %>
+</p>
+
+<%= link_to 'Edit', edit_todo_path(@todo) %> |
+<%= link_to 'Back', todos_path %>

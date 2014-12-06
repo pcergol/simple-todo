@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tags: MyString
+  due_on: 2014-12-06 15:01:44
+  priority: 1
+  completed_on: 2014-12-06 15:01:44
+  task: MyString
+
+two:
+  tags: MyString
+  due_on: 2014-12-06 15:01:44
+  priority: 1
+  completed_on: 2014-12-06 15:01:44
+  task: MyString
