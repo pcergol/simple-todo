@@ -12,24 +12,20 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :tags %><br>
-    <%= f.text_field :tags %>
+    <%= f.label :task %><br>
+    <%= f.text_field :task %>
   </div>
   <div class="field">
-    <%= f.label :due_on %><br>
-    <%= f.datetime_select :due_on %>
+    <%= f.label :tags %><br>
+    <%= f.text_field :tags %>
   </div>
   <div class="field">
     <%= f.label :priority %><br>
     <%= f.number_field :priority %>
   </div>
   <div class="field">
-    <%= f.label :completed_on %><br>
-    <%= f.datetime_select :completed_on %>
-  </div>
-  <div class="field">
-    <%= f.label :task %><br>
-    <%= f.text_field :task %>
+    <%= f.label :due_on %><br>
+    <%= f.datetime_select :due_on, include_blank:true %>
   </div>
   <div class="actions">
     <%= f.submit %>
