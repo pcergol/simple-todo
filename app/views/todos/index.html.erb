@@ -3,24 +3,23 @@
 <table>
   <thead>
     <tr>
-      <th>Tags</th>
-      <th>Due on</th>
       <th>Priority</th>
-      <th>Completed on</th>
-      <th>Task</th>
-      <th colspan="3"></th>
+	  <th>Due on</th>
+	  <th>Tags</th>
+	  <th>Task</th>
+	  <th>Completed on</th>
+      <th colspan="2"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @todos.each do |todo| %>
       <tr>
-        <td><%= todo.tags %></td>
-        <td><%= todo.due_on %></td>
         <td><%= todo.priority %></td>
-        <td><%= todo.completed_on %></td>
+		<td><%= todo.due_on %></td>
+		<td><%= todo.tags %></td>
         <td><%= todo.task %></td>
-        <td><%= link_to 'Show', todo %></td>
+		<td><%= todo.completed_on %></td>
         <td><%= link_to 'Edit', edit_todo_path(todo) %></td>
         <td><%= link_to 'Destroy', todo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
